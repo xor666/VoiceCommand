@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Lucy</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+	<script src="controller.js"></script>
+
+	<script>
+
+	</script>
+</head>
+<body ng-app="LucyApp" ng-controller="DireBonjourCtrl" id="body">
+	<div class="overlay"></div>
+
+	<div class="container" >
+		<div onload="init()" ></div>
+		<div class="row">
+			<div class="col-sm-4 text-center"></div>
+			<div class="col-sm-4 text-center">
+				<h3 class="upper">Lucy Voice command</h3>
+				<h3 class="upper">project</h3>
+				<img width="60" src="lucy logo.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<table  style="overflow:scoll" id="order-table" class="">
+					<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Ordres disponibles</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<!--<th scope="row">3</th>
+						<td>Larry</td>-->
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-sm-5">
+				<canvas id="demoCanvas" width="420" height="300"></canvas>
+				<!--<button type="button" id="play" class="btn btn-success mic-on">Play</button>-->
+				<!--<button type="button" id="pause" class="btn btn-danger mic-on">Stop</button></div>-->
+			</div>
+			<div class="col-sm-1">
+				<button type="button" id="play" class="btn btn-success mic-on">Play</button>
+				<!--<button type="button" id="pause" class="btn btn-danger mic-on">Stop</button></div>-->
+			</div>
+		</div>
+	</div>
+
+</div>		
+
+</body>
+</html>
